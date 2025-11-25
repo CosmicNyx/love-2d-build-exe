@@ -49,7 +49,7 @@ The script automatically finds your LOVE installation by checking these location
 3. `C:\Program Files (x86)\LOVE`
 4. System PATH (if `love.exe` is available globally)
 
-If LOVE is found, the script proceeds. If not, you'll get a helpful error message.
+If LOVE is found, the script proceeds. If not, you'll get an error message.
 
 ## Configuration
 
@@ -79,7 +79,7 @@ To distribute your game:
 
 1. Copy the entire contents of the `build` folder
 2. Share that folder with others
-3. They can run `game.exe` directly - no LOVE installation needed!
+3. They can run `game.exe` directly - no LOVE installation needed
 
 ## Troubleshooting
 
