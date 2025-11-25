@@ -40,6 +40,19 @@ your-game-folder/
 └── build-exe.ps1
 ```
 
+## Building LOVE2D vs Building Game Executables
+
+**Important distinction:** This script is for creating standalone executables from your LOVE2D games, not for compiling LOVE2D itself.
+
+- **This script:** Takes your game (Lua code, assets, etc.) and packages it into a standalone `.exe` file that can run without LOVE2D installed. You need LOVE2D already installed to use this script.
+
+- **Official Building Guide:** The [LOVE2D Building/Compiling Guide](https://love2d.org/wiki/Building_L%C3%96VE) is for compiling the LOVE2D framework itself from source code. This is only necessary if:
+  - You want to modify or add features to LOVE2D itself
+  - A binary is not provided for your platform
+  - You're developing LOVE2D, not a game
+
+If you just want to create a distributable game executable, this script is what you need. If you need to compile LOVE2D from source, see the official building guide.
+
 ## How Auto-Detection Works
 
 The script automatically finds your LOVE installation by checking these locations in order:
@@ -114,6 +127,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 - [LOVE2D Official Website](https://love2d.org/)
 - [LOVE2D Documentation](https://love2d.org/wiki/Main_Page)
+- [LOVE2D Building/Compiling Guide](https://love2d.org/wiki/Building_L%C3%96VE)
 
 ## License
 
