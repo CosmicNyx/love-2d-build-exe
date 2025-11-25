@@ -123,11 +123,30 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 - Each build overwrites previous builds in the output folder
 - The script works with any LOVE game version (11.0+)
 
+## Alternative: GitHub Action for Automated Builds
+
+For automated builds in CI/CD pipelines, consider using [love-build](https://github.com/nhartland/love-build), a GitHub Action that provides a more robust solution:
+
+**Advantages of love-build:**
+- Builds for multiple platforms (Windows 32/64-bit, macOS, Linux) automatically
+- Integrates with GitHub Actions for automated releases
+- Supports LuaRocks dependencies via rockspec files
+- Handles platform-specific packaging (AppImages, .app bundles, etc.)
+- Works with multiple LOVE versions
+- Better suited for continuous integration workflows
+
+**When to use this script vs love-build:**
+- **Use this script:** For quick local builds, one-off executables, or when you don't need CI/CD automation
+- **Use love-build:** For automated builds, multi-platform distribution, or when integrating with GitHub Actions
+
+If you're setting up automated builds for your project, [love-build](https://github.com/nhartland/love-build) is the recommended solution.
+
 ## Related
 
 - [LOVE2D Official Website](https://love2d.org/)
 - [LOVE2D Documentation](https://love2d.org/wiki/Main_Page)
 - [LOVE2D Building/Compiling Guide](https://love2d.org/wiki/Building_L%C3%96VE)
+- [Awesome LOVE2D](https://github.com/love2d-community/awesome-love2d) - Curated list of LOVE2D libraries, resources, and tools
 
 ## License
 
